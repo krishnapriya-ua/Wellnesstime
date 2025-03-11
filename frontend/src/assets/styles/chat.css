@@ -1,0 +1,243 @@
+.chatrow{
+    display: flex;
+    flex-direction: row;
+   scrollbar-width: none!important;
+    height: 100vh;
+    gap: 1px;
+    font-size: small;
+    width: 100%;
+   
+}
+.client-list{
+    background: rgb(244, 242, 242);
+    box-shadow: 1px 0px 6px 0px rgba(139, 139, 139, 0.47);
+  
+    border-radius: 1px;
+    padding: 3rem;
+
+}
+
+.chat-list{
+    background: rgb(244, 242, 242);
+    box-shadow: 1px 0px 6px 0px rgba(121, 121, 121, 0.47);
+
+    border-radius: 1px;
+    padding: 2rem;
+}
+.profile-list{
+    background: rgb(244, 242, 242);
+    box-shadow: 1px 0px 6px 0px rgba(138, 138, 138, 0.47);
+
+    border-radius: 1px;
+    padding: 2rem;
+}
+.chat-info p{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    color: rgba(19, 18, 18, 0.655);
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size:11px;
+
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    margin-top: 1rem;
+   
+  }
+  
+
+  .profile-details{
+    justify-items: flex-start;
+    letter-spacing: 1px;
+    font-size: small;
+  }
+  .profilename{
+    font-size: small;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  .messages-container {
+    height: 22rem;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    scrollbar-width: none;
+  }
+  .messages-containers{
+    height: 24rem;
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    scrollbar-width: none;
+  }
+  
+  .sent-message {
+    text-align: right;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.454);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+   width: fit-content;
+   justify-self:right;
+   margin-left: 8rem;
+  }
+  
+  .received-message {
+    text-align: left;
+    color: black;
+    background-color: #e0e0e0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    justify-self: start;
+    margin-right: 8rem;
+  }
+  .profiletag{
+    background: #d9d9d9;
+    height: 3rem;
+  }
+  .message-input {
+    display: flex;
+    margin-top: 6px;
+   
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px 0 0 2px;
+  
+  }
+  .tagp{
+    margin-bottom: 1rem;
+    margin-top: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: x-small!important;
+    font-weight: 500;
+    color: rgba(26, 25, 25, 0.696);
+  }
+  
+  .message-input button {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  @media (max-width: 768px) {
+    .chatrow{
+      display: flex;
+      flex-direction: column;
+    }
+    .client-list,.profile-list{
+      width: 100%;
+      height: -webkit-fill-available;
+     
+    }
+    
+    .chat-list{
+      width: 100%;
+     
+      padding: 0rem;
+    }
+    
+   
+    .profiletag{
+      padding: 0rem!important;
+    }
+    .chat-container {
+      justify-self: center;
+      width: 100%!important;
+      margin-top: 11rem!important;
+    }
+
+  
+    /* Stack elements vertically in the trainer-info section */
+    .trainer-info {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: -7rem;
+      
+    }
+  
+    /* Adjust profile image size */
+    .trainer-info img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+  
+    /* Make the messages container scrollable and adjust height */
+    .messages-container {
+      height: 61em;
+      padding-bottom: 3rem;
+    }
+  
+    .messages-container{
+      height: 676px!important;
+    }
+
+    .messages-containers {
+      height: 61em!important;
+    }
+    /* Adjust input field and button for mobile view */
+    .message-input input {
+      font-size: 14px;
+      height: 3rem;
+    }
+  
+    .message-input button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    /* Adjust the profile tag font size and margin for smaller screens */
+    .tagp {
+      font-size: 10px;
+      margin-left: 0;
+    }
+  
+    /* Adjust padding and margins */
+    .profiletag {
+      padding: 1rem;
+    }
+    .tagfix{
+      position: fixed;
+      width:-webkit-fill-available;
+    }
+  }
+  
+  /* Further adjustments for very small screens (e.g., phones) */
+  @media (max-width: 480px) {
+    /* Make chat container even more compact */
+    .chat-container {
+      justify-self: center;
+      width: 100%!important;
+      margin-top: 11rem;
+    }
+  
+    .message-input input {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .message-input button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }

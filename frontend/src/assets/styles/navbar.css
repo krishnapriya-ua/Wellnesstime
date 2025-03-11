@@ -1,0 +1,97 @@
+.navbar {
+    margin-left: 0;
+height: 5rem;
+    padding: 0 15px;
+    
+}
+
+.containerl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and toggler/nav items */
+    max-width: 100%;
+    background: transparent;
+    color: white;
+}
+
+.logo {
+    width: 22%;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    margin-left: 205px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.nav-link {
+  
+    color: rgb(27, 27, 27) !important;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 400;
+    FONT-SIZE: 12PX;
+
+}
+.wait{
+    display: flex;
+    flex-direction: row;
+}
+.navbut{
+    color: white!important;
+    font-size: x-small!important;
+    background: black!important;
+ 
+}
+
+@media (max-width: 708px) {
+    .navbar {
+     height: 5rem;
+        position: fixed; /* Keep navbar at the top */
+        top: -12px;
+        left: 0;
+        right: 0;
+        z-index: 9999; /* Ensure navbar stays above the rest of the content */
+        background: #e7e7e7;
+}
+    
+.navbar-toggler {
+    border: none;
+    box-shadow: none!important; /* Optional: styling the toggler button */
+}
+
+  
+    .containerl{
+        display: contents;
+    }
+    .logo {
+        width: 25%; 
+    }
+    .navbar-collapse{
+        background: #322b2b9e;
+        max-width: 33rem;
+        position: relative;
+        top: 17px;
+    
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        gap: 16px;
+        margin-left: 20px;
+        font-size: medium;
+       
+        
+    }
+    .nav-link{
+        color: white!important;
+    }
+   
+}
+
+@media (min-width: 800px) and (max-width: 848px)  {
+   
+}

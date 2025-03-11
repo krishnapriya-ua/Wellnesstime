@@ -1,0 +1,176 @@
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .header-column {
+    width: 20%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .icon {
+    width: 40px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .calculation p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .calculation h6 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .content-row {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .chart-column {
+    width: 78%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-container {
+    margin-top: 2rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .activity-table th, .activity-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .activity-table th {
+    background: #f4f4f4;
+  }
+  .revbutton{
+    background: black!important;
+    color: white!important;
+    font-size: x-small!important;
+    cursor: pointer;
+    margin: 1rem!important;
+  }
+
+  .top-trainer {
+    background: white;
+    padding: 1rem;
+    width: 45%;
+    height: auto; /* Adjust for content size */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-trainer h6 {
+    margin: 0.5rem 0;
+    font-size: small;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .table {
+    font-size: 0.85rem; /* Small text for table */
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    text-align: left;
+    padding: 0.5rem;
+  }
+  
+  .table th {
+    background: #f7f7f7;
+    font-weight: 600;
+  }
+  
+  .table tr:nth-child(even) {
+    background: #fafafa;
+  }
+  
+  .table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  .table-sm {
+    font-size: 0.8rem; /* Slightly smaller for compactness */
+  }
+  @media (max-width: 768px) {
+    .header-row {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .header-column {
+      width: 45%; /* Reduce width to fit two columns */
+      margin-bottom: 1rem;
+    }
+  
+    .content-row {
+      flex-direction: column; /* Stack content vertically */
+      gap: 1rem;
+    }
+  
+    .chart-column,
+    .top-trainer {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .table {
+      font-size: 0.75rem; /* Smaller text for tables */
+    }
+  
+    .revbutton {
+      font-size: 0.7rem; /* Adjust button text size */
+      margin: 0.5rem; /* Reduce margin */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-column {
+      width: 100%; /* Single column layout */
+    }
+  
+    .top-trainer h6 {
+      font-size: 0.8rem; 
+    }
+  
+    .table th, .table td {
+      padding: 0.3rem; 
+    }
+  
+    .icon {
+      width: 30px; 
+    }
+  
+    .revbutton {
+      font-size: 0.6rem;
+      padding: 0.2rem 0.5rem; 
+    }
+    .allbutton{
+      display: flex;
+      flex-direction: column!important;
+    }
+  }

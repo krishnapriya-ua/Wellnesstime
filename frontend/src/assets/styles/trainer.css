@@ -1,0 +1,122 @@
+.css-s09cke-MuiTablePagination-selectLabel {
+   margin: 12px;
+}
+.css-11cfq65-MuiTablePagination-displayedRows {
+    margin: 12px;
+    
+
+}
+table td{
+    font-size: small;
+}
+.workout-table-container {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.workout-table th, .workout-table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.workout-tablet th {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.workout-tablet th , .workout-tablet td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.workout-tablet th:first-child {
+  background-color: #fff; /* Optional: make sure sticky columns have white background */
+}
+.workout-tablet{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.workout-tablet td {
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.workout-tablet td img {
+  max-width: 80px;
+}
+.workout-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.workout-tablet {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.workout-tablet th, .workout-tablet td {
+  padding: 8px 12px;
+  width: 12rem;
+  text-align: left;
+}
+
+.workout-tablet th {
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 3; /* Ensure header stays above content */
+}
+
+.workout-tablet th:nth-child(1){
+  left: 0;
+  background-color: #fff; /* Optional: ensure sticky columns have white background */
+  z-index: 4;
+}
+.workout-tablet td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  background-color: #fff; /* Ensure sticky cells have white background */
+  z-index: 2;
+}
+.workout-tablet th:nth-child(1) {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+}
+
+.workout-tablet td {
+  word-wrap: break-word;
+  white-space: break-spaces;
+  
+}
+
+.workout-tablet td img {
+  max-width: 80px;
+}
+.workout-tablet td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  background-color: #fff; /* Ensure sticky cells have white background */
+  z-index: 1;
+}
+ 
+@media (max-width: 708px) {
+
+  .workout-tablet td:nth-child(1) {
+    position: sticky;
+    left: -7px!important;
+
+  }
+}

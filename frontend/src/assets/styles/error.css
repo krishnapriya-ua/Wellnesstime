@@ -1,0 +1,20 @@
+
+@media (max-width: 708px) {
+ 
+.error{
+  display: flex;
+  flex-direction: column!important;
+}
+.errcol{
+    text-align: start;
+    margin-left: 4rem!important;
+    margin-top: 6rem!important;
+    margin-bottom: 1rem!important;
+}
+.errimg{
+    margin-bottom: 11rem;
+    max-width: 321px!important;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+}

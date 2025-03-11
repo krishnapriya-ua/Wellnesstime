@@ -1,0 +1,40 @@
+
+.backp{
+    font-weight: 700;
+      margin-left: 1rem!important;
+  }
+.container img{
+    margin-left: auto!important;
+    width: 222px;
+    height: auto;
+
+}
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    scrollbar-width: none;
+}
+.reactEasyCrop_CropArea{
+    
+   width: 338px!important;
+    height: 313px!important;
+    position: absolute!important;
+
+}
+.reactEasyCrop_Container{
+    background: transparent;
+}
+.crop-container {
+    position: relative;
+    width: 100%; /* Allow responsive width */
+    max-width: 500px; /* Optional: limit the max width */
+    aspect-ratio: 1 / 1; /* For square cropping */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Hide overflow */
+    background-color: #f3f3f3; /* Optional: add a background */
+  }
+  
+  
+@media (max-width: 708px) {
+    .backp{
+        margin-left: 1rem;
+    }
+}

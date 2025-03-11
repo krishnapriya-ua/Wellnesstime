@@ -1,0 +1,596 @@
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+.home {
+    margin: 0;
+    overflow-x: hidden;
+    position: sticky;
+    width: 100%;
+
+    background: linear-gradient(to bottom, #e7e7e7 34%, #dddddd 53%) !important
+}
+.wallpaper {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.wall {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    z-index: -1;
+}
+.content {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+   
+
+}
+.contenth3 {
+
+    letter-spacing: 5px;
+
+    font-size: 23px;
+
+    animation: zoomIn 3.5s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.144); 
+
+}
+.contentp {
+
+    letter-spacing: 1px;
+   
+    font-size: 15px;
+    animation: zoomIn 2s ease-out;
+    width: 73%;
+    margin-top: 12px;
+}
+
+.text-container Button{
+    background: rgb(241, 238, 238);
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px 0px #00000057;
+   
+    
+
+}
+.content Button:hover{
+    background: rgba(0, 0, 0, 0.644);
+    color:white;
+}
+.workout {
+
+    height: auto;
+}
+.basic {
+    letter-spacing: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2e2e2efd;
+    line-height: 52px;
+    text-align: center;
+
+}
+.featuredbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+
+}
+.feature {
+    width: 202px;
+    margin-left: 108px;
+    margin-right: 127px;
+    height: 154px;
+    font-size: 14px;
+    background: #9b9b9bde;
+    border-radius: 6px;
+    color: #17161a;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 19px;
+    line-height: initial;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.121);
+    animation: zoomIn 3.5s ease-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+}
+.ourworkout {
+    margin: 7rem;
+}
+.our {
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 27px;
+    color: #2e2e2e;
+    margin-top: 80px;
+
+}
+.para {
+    color: #2e2e2ecc;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    width: 48%;
+    padding-top: 7px;
+
+}
+.workout-gallery {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 0 110px;
+    scroll-snap-type: x mandatory;
+    margin-top: -59px;
+    margin-left: 117px;
+    scrollbar-width: none;
+    width: 75%;
+
+}
+
+.workout-box {
+    min-width: 204px;
+    height: auto;
+    margin-bottom: 1px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.workout-box img {
+    width: 100%;
+    height: 238px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 3px 7px 0 #382525bd;
+    border-radius: 15px;
+}
+.workout-box:hover img {
+    transform: scale(1.1);
+}
+.workout-box:hover p {
+    transform: scale(1.15);
+}
+.workout-box p {
+    color: #000000b5;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 0 #342e2e54;
+    margin-top: 18px;
+    font-size: 14px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition to make the zoom smooth */
+}
+
+
+.workout-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.workout-gallery::-webkit-scrollbar-thumb {
+    background-color: #c7cad0;
+    border-radius: 10px;
+}
+.ourworkout Button {
+    background: #B9BBBF;
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+}
+.premiumbox {
+    display: flex;
+    flex-direction: row;
+   margin-left: 0rem;
+   margin-right: 2rem;
+   gap: 1rem;
+}
+
+.premium {
+    width: -webkit-fill-available;
+    height: auto;
+    font-size: 12px;
+    background: #bababa;
+    border-radius: 1px;
+    color: #474554;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 13px;
+    line-height: initial;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.361);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.premium:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.try:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 7px rgba(15, 2, 1, 0.3);
+}
+.premium img {
+    width: 91%;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 11px;
+    object-fit: cover;
+    height: 126px;
+}
+.premium p {
+    font-size: 12px;
+    border-radius: 2px;
+    color: #2e2e2eb0;
+    letter-spacing: 0;
+    font-weight: 300;
+    padding: 15px;
+    line-height: 15px;
+    font-family: sans-serif;
+    margin-top: 11px;
+    width: 103%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.feed {
+    width: -webkit-fill-available;
+    height: 12rem;
+    background: #bababa;
+    border-radius: 11px;
+    justify-self: center;
+    box-shadow: 0 4px 7px #0000008a;
+    margin-left: 7rem;
+    margin-right: 4rem;
+    padding-bottom: 9px;
+
+  
+
+}
+
+
+.feed p {
+    padding: 7px;
+    font-size: small;
+    padding-top: 44px;
+    text-align: center;
+    color: #474554;
+ 
+ 
+}
+.feedimg{
+    height: 77px;
+    width: 9%;
+    object-fit: cover;
+    margin-left: 0px;
+    margin-top: -51px;
+    position: absolute;
+    border-radius: 7px;
+    box-shadow: 3px 2px 3px #00000047;
+    animation: zoomIn 3.5s ease-out;
+}
+.feedi{
+    margin-left: 105px;
+}
+.feedi p{
+    width: 77%;
+}
+.feedo{
+    width: -webkit-fill-available;
+    height: 8rem;
+      background: #bababa;
+      justify-self: center;
+      box-shadow: 0 4px 7px #0000008a;
+      align-content: space-around;
+      justify-items: center;
+      /* text-align: center; */
+      margin-right: 2rem;
+}
+.feedo input,.feedm input{
+    border: none;
+    height: 22px;
+    font-size: small;
+    padding: 18px;
+    width: 48%;
+    background: #ffffffd4;
+    margin-left: 1rem;
+}
+.feedo Button,.feedm Button{
+    background: #ffffff91;
+    color: #000000;
+    margin: 14px;
+    border-radius: 0px;
+    font-size: x-small;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.feedan{
+    height: auto;
+    background: #bababa;
+    border-radius: 11px;
+    justify-self: center;
+    box-shadow: 0 4px 7px #0000008a;
+    align-content: center;
+    margin-top: 4.5rem !important;
+    margin-left: 7rem;
+    margin-right: 4rem;
+
+}.feedan p{
+    
+        padding: 17px;
+        font-size: 14PX;
+        padding-top: 24px;
+        padding-bottom: -21px;
+    width: 97%;
+        color: #474554;
+    
+}
+.aim{
+     align-content: space-evenly;
+     margin-top: 87px;
+}
+.feedm{
+    align-content: space-around;
+    justify-items: center;
+    text-align: center;
+}
+
+
+@media (max-width:898px) {
+    .content {
+        margin-top: 3rem;
+    }
+    .wall {
+        top: 0;
+
+    }
+    .wallpaper{
+        position: sticky;
+        background: #eeeeee;
+        height: 37rem;
+    }
+    .contenth3 {
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+       
+    }
+    .contentp {
+        font-size: 12px;
+        line-height: 18px;
+        /* font-weight: 300; */
+        width: 84%;
+        letter-spacing: 1px;
+        font-family: system-ui;
+    }
+    .contentbutton {
+        width: 100%;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-left: 0;
+        margin-bottom: 42px;
+    }
+    .featuredbox {
+        gap: 1px;
+        justify-content: center;
+    }
+    .text-container Button{
+        margin-top: 6px;
+        padding: 8px 18px;
+        background-color: #eaeaea;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+    .feature {
+        margin-left: 12px;
+        width: 108px;
+        margin-right: 0px;
+        height: 101px;
+        font-size: 14px;
+       
+        border-radius: 3px;
+        color: #17161a;
+        letter-spacing: 1px;
+        font-weight: 300;
+        padding: 10px;
+        line-height: normal;
+        box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 3.5s ease-out;
+        font-size: 9px;
+    }
+    .feature p {
+        width: 82px;
+    }
+    .ourworkout {
+        margin: 35px;
+        margin-top: 3rem;
+    }
+    .our {
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #2e2e2ee8;
+        margin-top: 2px;
+
+    }
+    .basic{
+        margin-top: 5rem !important;
+    }
+    .para {
+        color: #2e2e2ecc;
+        letter-spacing: 0;
+        font-weight: 400;
+        line-height: 16px;
+        font-size: small;
+        width: 78%;
+        padding-top: 8px;
+    }
+    .workout-gallery {
+        margin-top: 0;
+        margin-left: 41px;
+        gap: 25px;
+        width: 80%;
+    }
+    .workout-box {
+        min-width: 123px;
+        margin-bottom: 22px;
+    }
+    .workout-box img {
+        height: 134px;
+    }
+    .workout-box p {
+        letter-spacing: 2px;
+        text-shadow: 0 0 0 #342e2e54;
+        margin-top: 12px;
+        font-size: 11px;
+    }
+    .premiumbox {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0rem;
+        margin-left: 0rem;
+       
+    }
+
+    .premium {
+        width: calc(50% - 10px);
+        margin-bottom: 7px;
+      
+        
+    }
+    .premium img {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        border-radius: 11px;
+        object-fit: cover;
+        height: 99px;
+    }
+    .premium p {
+        font-size: 9px;
+        border-radius: 6px;
+        color: #2e2e2e;
+        letter-spacing: 0;
+        font-weight: 300;
+        padding: 1px;
+        line-height: 12px;
+        font-family: sans-serif;
+        margin-top: 8px;
+        width: 102%;
+    }
+    .feed{
+        width: -webkit-fill-available;
+        height: auto;
+        background: #bababa;
+        border-radius: 11px;
+        justify-self: center;
+        box-shadow: 0px 4px 7px #0000008a;
+        margin-bottom: 38px;
+        margin-top: 3px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+       
+    }
+    .feed p{
+        padding: 4px;
+        font-size: 11px;
+        padding-top: 83px;
+        text-align: center;
+        color: #222124;
+        padding-bottom: 2rem;
+    }
+    .feedimg{
+     
+        width: 8rem;
+        object-fit: cover;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .feedback-input{
+        width: 88%!important;
+    }
+    .feedi{
+        margin-left: 2rem;
+        margin-right: 3rem;
+        width: -webkit-fill-available ;
+    }
+.feedo{
+    width: -webkit-fill-available;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+.feedo input{
+    border: none;
+    height: 22px;
+    font-size: small;
+    padding: 18px;
+    width: 52%;
+    background: #ffffffd4;
+   
+}
+.feedan{
+
+    margin-top: 1.5rem !important;
+    border-radius: 0px;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    width: auto;
+    height: auto;
+}
+
+}
+@media (max-width:528px) {
+    .wall {
+        height: 33rem;
+        object-fit: contain;
+        margin-top: 201px;
+        width: -webkit-fill-available;
+    }
+    
+}
+
+@media (min-width:528px) and (max-width:923px){
+    .wall {
+        height: 25rem;
+        object-fit: cover;
+        margin-top: 201px;
+        width: -webkit-fill-available;
+    }
+    
+}
+@media (max-width: 782px) {
+   
+}

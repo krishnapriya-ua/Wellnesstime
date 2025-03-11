@@ -1,0 +1,374 @@
+
+.userprofile {
+    min-height: 140vh;
+    background: linear-gradient(to bottom, #f5f5f5 0%, #dcdcdc 100%);
+    overflow-x: hidden;
+  }
+  .userdetails{
+    background: white;
+    width:24rem;
+    height: fit-content;
+    border-radius: 19px;
+    box-shadow: 0 7px 9px rgb(0 0 0 / 33%);
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+.hover-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: smaller;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.photo-container:hover .hover-text {
+  opacity: 1;
+}
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+.username{
+    align-content: start;
+    justify-self: left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+.chattr{
+  box-shadow: 1px 0px 3px 1px #00000094!important;
+
+}
+.userphoto{
+    border-radius: 90px;
+    width: 5rem;
+    height:5rem ;
+    background: rgb(180, 173, 173);
+    margin-top: 1rem ;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+    object-fit: cover;
+
+}
+.dropzone{
+    border: 2px dashed rgb(204, 204, 204);
+    padding: 10px;
+    cursor: pointer;
+    width: 12rem;
+    height: 4rem;
+    font-size: small;
+}
+
+.reactEasyCrop_CropArea{
+    
+
+    position: absolute!important;
+
+}
+.reactEasyCrop_Container{
+    background: transparent;
+}
+.crop-container {
+    position: relative;
+    width: 100%; /* Allow responsive width */
+    max-width: 500px; /* Optional: limit the max width */
+    aspect-ratio: 1 / 1; /* For square cropping */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Hide overflow */
+    background-color: #f3f3f3; /* Optional: add a background */
+  }
+   .usercontainer{
+    display: flex;
+    flex-direction: row;
+   }
+   .timespend{
+    background: white;
+    width: 31rem;
+    margin-left: 13rem;
+    margin-right: 4rem;
+    height: 17rem;
+    border-radius: 19px;
+    box-shadow: 0 7px 9px rgb(0 0 0 / 33%);
+    margin-top: 3rem;
+
+   }
+   .timerow{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+ 
+    position: relative;
+   }
+   .timecolumn{
+    height: 7rem;
+    border-radius: 7px;
+     color:white!important;
+    width: 11rem;
+    margin-right: 6px;
+    margin-bottom: 11px;
+    font-size: small!important;
+    font-weight: 600!important;
+    padding: 14px;
+    padding-top: 11px;
+    align-content: center;
+    justify-items: left;
+    margin-left: 37px;
+    
+   }
+   .charts{
+    background: white;
+    width: 32rem;
+   
+    margin: 3rem;
+    height: 17rem;
+    border-radius: 19px;
+    box-shadow: 0 7px 9px rgb(0 0 0 / 33%);
+
+
+   }
+   .row {
+    --bs-gutter-x: 0.5rem!important;
+   }
+   .writings{
+    margin: 1rem;
+    padding: 3rem;
+    font-size: smaller;
+    letter-spacing: 0px;
+    
+   }
+   .charts-container {
+    position: relative;
+    width: 100%; /* Adjust to your chart's width */
+    height: 300px; /* Adjust to your chart's height */
+  }
+  
+  .charts.blurred {
+    filter: blur(3px); /* Adds the blur effect */
+    pointer-events: none; /* Prevents interaction with the chart */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 74%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 19%);
+    z-index: 1;
+  }
+  
+  .lock-icon {
+    font-size: 3rem; 
+   
+  }
+  
+  .premium-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Text color */
+  }
+
+
+  .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Places the image behind the text */
+    overflow: hidden;
+  }
+  
+  .background-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Apply blur effect */
+  }
+  
+  .writingsn {
+    position: relative;
+    z-index: 1;
+    background: rgb(0 0 0 / 0%);
+    border-radius: 8px;
+    margin: 2rem;
+    padding: 3rem;
+    font-size: smaller;
+    letter-spacing: 0px;
+  }
+  
+  .writingsn h6 {
+    font-weight: bold;
+  }
+  
+  .writingsn p {
+    font-size: 14px;
+  }
+  
+  .updatestatus{
+    width: 25%;
+    font-size: x-small;
+    margin-left: auto;
+    margin-top: 3rem;
+    cursor: pointer;
+    color: #323282;
+    text-decoration: underline;
+  }
+  .premodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.premodal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.premodal-content h6 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.603);
+    letter-spacing: 1px;
+}
+
+.premodal-content label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.603);
+    letter-spacing: 1px;
+}
+
+.premodal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.premodal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premodal-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.premodal-actions button[type='submit'] {
+    background: #4caf50;
+    color: white;
+}
+
+.premodal-actions button[type='button'] {
+    background: #f44336;
+    color: white;
+}
+
+
+
+@media (max-width: 708px) {
+    .userdetails{
+        margin: 1rem!important;
+        position: relative;
+        width: -webkit-fill-available;
+        top: 7rem;
+    }
+    .dropzone{
+        border: 2px dashed rgb(204, 204, 204);
+        padding: 10px;
+        cursor: pointer;
+        width: -webkit-fill-available;
+        height: auto;
+        font-size: small;
+    }
+    .water{
+      margin-top: 3rem!important;
+      margin-left: 7rem;
+      margin-bottom: -6rem;
+    }
+    
+    .usercontainer{
+        display: flex;
+        flex-direction: column;
+       }
+       .timespend {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow wrapping to multiple rows */
+        justify-content: space-around; /* Distribute columns evenly */
+        gap: 1rem; /* Add space between items */
+        background: white;
+        width: -webkit-fill-available;
+        height: auto; /* Adjust height automatically */
+        border-radius: 19px;
+        box-shadow: 0 7px 9px rgb(0 0 0 / 33%);
+        margin: 1rem;
+        margin-top: 8rem;
+        padding: 1rem;
+        margin-left: 1rem!important;
+    }
+
+    .timecolumn {
+        flex: 1 1 calc(50% - 1rem); /* Each column takes 50% width minus the gap */
+        max-width: calc(50% - 1rem); /* Prevent columns from exceeding 50% */
+        height: auto;
+        border-radius: 7px;
+        color: white !important;
+        width: 19rem;
+        margin-right: 10px;
+        margin-bottom: 8px;
+        font-size: small !important;
+        font-weight: 600 !important;
+        padding: 16px;
+        padding-top: 11px;
+        align-content: center;
+        justify-items: left;
+        margin-left: 2px;
+     /* Adjust height automatically */
+    }
+    .workoutnamede{
+        margin-left: 5px!important;
+    }
+    .charts{
+      width: -webkit-fill-available;
+      margin: 1rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+    .writings,.writingsn {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: small !important;
+        letter-spacing: 0px;
+        padding-top: 2rem;
+        
+    }
+}

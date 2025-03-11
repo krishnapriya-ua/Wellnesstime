@@ -1,0 +1,115 @@
+/* Main water flow container */
+.water-flow-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #dcdcdc, #a9a9a9); /* White to light gray gradient */
+    overflow: hidden;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: waterPulse 6s ease-in-out infinite;
+    margin-bottom: 11px;
+  }
+  
+  /* Water filling effect */
+  .water-flow-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #b0b0b0, #707070); /* Light gray to dark gray */
+    transition: height 0.5s ease-in-out;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation: waterRise 2s ease-in-out;
+  }
+  
+  /* Main water flow animation */
+  .water-flow {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.7); /* Dark gray to black */
+    border-radius: 50%;
+    animation: waterFlow 2s infinite linear;
+  }
+  
+  /* Animate the water level rising */
+  @keyframes waterRise {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  
+  /* Animates the flow of water particles */
+  @keyframes waterFlow {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(8px);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    75% {
+      transform: translateY(-8px);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adds pulsing effect for container */
+  @keyframes waterPulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.95;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.95;
+    }
+  }
+  
+  /* Text styling */
+  .water-text {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    animation: splashEffect 1s ease-in-out;
+  }
+  
+  /* Additional animation for splash effect when percentage changes */
+  @keyframes splashEffect {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  

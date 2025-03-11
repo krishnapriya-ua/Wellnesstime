@@ -1,0 +1,151 @@
+/* Custom Styles for Login */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+  }
+
+  .container {
+    max-width: 900px; /* Limit the width of the container */
+  }
+  .headi{
+    text-align: center !important;
+   
+    color: #2e2e2e;
+    letter-spacing: 1px;
+    font-weight: 700;
+   
+    font-size: medium;
+
+  }
+  .container img{
+    margin-left: 4rem;
+  }
+  .custom-input:focus {
+    border-bottom: 2px solid #3f51b5; /* Primary color */
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .custom-input::placeholder {
+    color: #bdbdbd; /* Light gray */
+    font-size: 14px;
+  }
+  
+  .formi {
+   width: 50%!important;
+   justify-self: center;
+  }
+  .formii {
+    width: 40%!important;
+    justify-self: center;
+   }
+   label{
+    display: inline-block;
+    font-size: x-small;
+    color: #4d4d4d;
+    font-weight: 500;
+
+  }
+  .TextField{
+    font-size: small;
+
+  }
+  /* Style for Password Visibility Toggle */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d; /* Optional: Muted color for the icon */
+  }
+  
+  .password-toggle:hover {
+    color: #333333; /* Change color on hover */
+  }
+  
+  .text{
+    font-size: small;
+    color: #4d4d4d;
+    font-weight: 500;
+  }
+  .button{
+  
+    background: #000000!important;
+  }
+  
+  h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+  }
+  
+
+  .vr {
+    border-left: 1px solid #3a3f44;
+    height: 16rem;
+    margin-top: 1rem;
+  }
+  
+  .canti {
+   
+    width: 90%!important;
+    margin-top: 1rem;
+    text-align: center;
+  
+  }
+  .canti a{
+    color: #000000a3 !important;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0px;
+   
+    
+  }
+  
+  .canti-a:hover {
+    text-decoration: underline;
+  }
+
+  .social Button{
+    color: #000000de;
+    font-size: x-small;
+    height: 3rem;
+    FONT-WEIGHT: 700;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    gap: 8px;
+   
+  }
+  .back p{
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+@media (max-width: 708px) {
+    .headi{
+        text-align: center !important;
+        margin-top: 0rem;
+        color: #2e2e2e;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin-left: 0rem;
+        font-size: medium;
+       
+    
+      }
+      .formi,.formii {
+        width: 95%!important;
+      
+       }
+      .container img{
+        margin-left: 0rem;
+      }
+      .canti {
+   
+        width: 90%!important;
+        margin-top: 0rem;
+      
+      }
+}

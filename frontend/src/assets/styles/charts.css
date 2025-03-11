@@ -1,0 +1,71 @@
+.recharts-wrapper{
+    width: 445px !important;
+    height: 246px !important;
+    margin-top: 1rem !important;
+    font-size: small;
+    position: initial;
+}
+ .recharts-layer text{
+    fill: rgba(0, 0, 0, 0.735)!important;
+}
+.recharts-legend-item-text{
+    top: 16px !important;
+    position: relative;
+    font-size: xx-small;
+    letter-spacing: 1px;
+}
+.recharts-legend-item {
+    display: inline-flex!important;
+}
+
+.recharts-wrapper svg{
+    margin-top: 1rem;
+}
+.guagewritings{
+    margin-top: 20px;
+    display: flex;
+   
+    flex-direction: column;
+    gap: 6px;
+    margin-top: -16rem;
+    margin-left: 19rem;
+    display: grid;
+    width: max-content;
+    font-size: smaller;
+}
+
+.bmi-guage{
+    margin-top: 1rem!important;
+}
+@media (max-width: 708px) {
+    .recharts-wrapper{
+        width: 378px !important;
+        height: 232px !important;
+        margin-top: 1rem !important;
+        margin-bottom: 4rem !important;
+    }
+    .recharts-wrapper svg{
+        width: 86%!important;
+        height: 101%!important;
+    }
+    .bmi-guage{
+        margin-top: 2rem!important;
+    }
+    .recharts-legend-wrapper{
+        width: auto!important;
+        position: relative!important;
+        top: -3rem!important;
+    }
+    .guagewritings{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: -13rem;
+        margin-left:auto;
+        display: grid;
+        width: max-content;
+        font-size: x-small;
+        margin-right: -4rem;
+    }
+}

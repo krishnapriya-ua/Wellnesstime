@@ -1,0 +1,119 @@
+.home {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #e7e7e7 11%, #c7cad0 100%);
+}
+.slider-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+.css-1f8sh1y{
+  height: 28rem!important;
+}
+.MuiButtonBase-root {
+  z-index: 1; /* Ensure buttons are clickable */
+}
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  scrollbar-width: none;
+}
+
+.slide {
+  flex: 0 0 104%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  scroll-snap-align: start;
+  transition: opacity 1s ease-in-out;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.arrow-button.left {
+  left: 10px;
+  padding-top: 2px;
+}
+
+.arrow-button.right {
+  right: 10px;
+  padding-top: 2px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.slide-button:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+  color: white;
+}
+.image-container img {
+  width: 108%;
+  height: auto;
+  object-fit: contain;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex-direction: column;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .slider-container{
+    height: auto;
+  }
+
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+  .image-container{
+    margin-top: 60px;
+  }
+  
+.css-1f8sh1y{
+  height: 33rem!important;
+}
+  
+}

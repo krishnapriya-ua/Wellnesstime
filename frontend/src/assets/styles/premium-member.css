@@ -1,0 +1,105 @@
+.premiu-little {
+
+    margin-top: 30px;
+}
+
+
+.head {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-sections {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.workout-preferences, .main-goals, .additional-info {
+    flex: 1 1 calc(100% - 20px);
+    max-width: 100%; 
+    margin: 10px auto;
+    background: #f9f9f9;
+}
+.small{
+    margin: 5rem!important;
+  
+}
+
+
+
+@media (min-width: 768px) {
+    .workout-preferences, .main-goals, .additional-info {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+    .form-sections {
+        justify-content: space-between; 
+    }
+    .premiu-little{
+        padding-top: 3rem!important;
+    }
+   
+    
+}
+
+
+@media (max-width: 468px) {
+    .premiu-little{
+        padding-top: 3rem!important;
+    }
+    .great{
+        width: 87%!important;
+    }
+    .small p{
+        width: 68%!important;
+        letter-spacing: 2px!important;
+        font-size: small!important;
+    }
+    .small{
+        margin: 1rem!important;
+        margin-top: 7rem!important;
+    }
+
+}
+
+.prebu {
+    width: auto;
+    max-width: 300px;
+    margin: 20px auto; 
+}
+
+
+.workout-preferences input,
+.main-goals input {
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+
+.workout-preferences label,
+.main-goals label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: small;
+}
+
+.additional-info{
+    font-size: small;
+}
+
+.prebu {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: black;
+}

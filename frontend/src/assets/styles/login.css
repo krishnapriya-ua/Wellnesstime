@@ -1,0 +1,134 @@
+/* Custom Styles for Login */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  .container {
+    max-width: 900px; /* Limit the width of the container */
+  }
+  .head{
+ 
+    margin-top: -1rem;
+    color: #2e2e2e;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: 3rem!important;
+    font-size: medium;
+
+  }
+  .container img{
+    margin-left: 4rem;
+  }
+  .bi{
+    margin-top: 15px!important;
+  }
+  form {
+    max-width: 100%;
+  }
+   label{
+    display: inline-block;
+    font-size: small;
+    color: #4d4d4d;
+    font-weight: 500;
+
+  }
+  .TextField{
+    font-size: small;
+
+  }
+  /* Style for Password Visibility Toggle */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d; /* Optional: Muted color for the icon */
+  }
+  
+  .password-toggle:hover {
+    color: #333333; /* Change color on hover */
+  }
+  
+  .text{
+    font-size: small;
+    color: #4d4d4d;
+    font-weight: 500;
+  }
+  .button{
+  
+    background: #000000!important;
+  }
+  
+  h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333333;
+  }
+  
+
+  .vr {
+    border-left: 1px solid #3a3f44;
+    height: 16rem;
+    margin-top: 1rem;
+  }
+  
+  .cant {
+   
+    width: 10rem!important;
+    margin-top: 0rem;
+  
+  }
+  .cant a{
+    color: #000000ce !important;
+    font-size: small;
+   
+  
+    
+  }
+  
+  .cant-a:hover {
+    text-decoration: underline;
+  }
+
+  .social Button{
+    color: #000000de;
+    font-size: x-small;
+    height: 3rem;
+    FONT-WEIGHT: 700;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    gap: 8px;
+   
+  }
+  .back p{
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+@media (max-width: 708px) {
+    .head{
+        text-align: center !important;
+        margin-top: -1rem;
+        color: #2e2e2e;
+        letter-spacing: 1px;
+        font-weight: 700;
+
+        font-size: medium;
+        margin-left: 0rem!important;
+       
+    
+      }
+      .container img{
+        margin-left: 0rem;
+      }
+      .cant {
+   
+        width: 10rem!important;
+        margin-top: 0rem;
+      
+      }
+}

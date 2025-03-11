@@ -1,0 +1,57 @@
+.aboutcontainer{
+    height: auto;
+}
+.aboutrow{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+.aboutroww{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.aboutmeditation{
+    width: 14rem;
+    border-radius: 11px;
+    height: 18rem;
+    object-fit: cover;
+}
+.writing p{
+    font-size: small;
+    letter-spacing: 1px;
+    line-height: 23px;
+    text-align: start;
+    width: 88%;
+}
+
+
+@media (max-width: 768px) {
+    .aboutrow{
+        display: flex;
+        flex-direction: column!important;
+        margin-bottom: 4rem;
+        margin: 0rem!important;
+    }
+    .aboutrow img, .aboutroww img{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .aboutmeditation{
+        width: 16rem;
+        border-radius: 11px;
+        height: 16rem;
+        object-fit: cover;
+    }
+    .writing p{
+        width: 96%;
+    }
+    .aboutroww{
+        display: flex;
+        flex-direction: column-reverse!important;
+        margin-bottom: 4rem;
+        margin: 0rem!important;
+
+    }
+}

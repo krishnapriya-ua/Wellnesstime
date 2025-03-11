@@ -1,0 +1,125 @@
+.report-container{
+    margin: 5rem;
+    width: 67%;
+    background: #ededed6b;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #454545b5;
+    justify-self: center;
+    
+}
+.report-content h6{
+    justify-self: center;
+    letter-spacing: 2px;
+    font-size: medium;
+    margin-bottom: 4rem;
+}
+.revenue-content{
+    margin: 1rem;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+}
+.revenue-content p{
+   
+    text-transform: uppercase;
+    font-size: x-small;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: small;
+  }
+  
+  .revenue-table th, .revenue-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .revenue-table th {
+   
+    text-align: center;
+  }
+  
+
+  
+  .revenue-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .revenue-table td {
+    text-align: center;
+  }
+
+  .pdfbutton{
+    background: black!important;
+    color: white!important;
+    font-size: x-small!important;
+    margin-top: 2rem!important;
+
+  }
+
+  
+@media (max-width: 708px) {
+  .report-container{
+    margin: 1rem;
+    width: 87%;
+    background: #ededed6b;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #454545b5;
+    justify-self: center;
+    
+}
+
+
+
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: small;
+    table-layout: auto;
+  }
+  
+  .revenue-table th, .revenue-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .revenue-table th {
+   
+    text-align: center;
+  }
+  .revenue-table-container{
+    overflow-x: auto;
+   -webkit-overflow-scrolling: touch; 
+  }
+  
+
+  
+  .revenue-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .revenue-table td {
+    text-align: center;
+  }
+
+  .pdfbutton{
+    background: black!important;
+    color: white!important;
+    font-size: x-small!important;
+    margin-top: 2rem!important;
+    margin: 2rem!important;
+
+  }
+
+  
+
+}
