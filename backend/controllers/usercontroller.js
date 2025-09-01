@@ -9,6 +9,7 @@ const crypto=require('crypto')
 const Razorpay = require('razorpay')
 const Admin=require('../model/admin')
 const schedule=require('node-schedule')
+const mailpassword = process.env.MAIL_PASSWORD
  
 
 const revokePremiumJob = schedule.scheduleJob('0 0 * * *', async () => {
@@ -75,7 +76,7 @@ module.exports={
         service: 'gmail', // Replace with your email service
         auth: {
           user: 'krishnapriyaua@gmail.com',
-          pass: 'txej uvva mwtl nzsq'
+          pass: mailpassword
         },
       });
   
@@ -244,7 +245,7 @@ module.exports={
             service: 'gmail',
             auth: {
                 user: 'krishnapriyaua@gmail.com',
-                pass: 'txej uvva mwtl nzsq'
+                pass: mailpassword
             }
         });
 

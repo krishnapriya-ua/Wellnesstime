@@ -7,7 +7,7 @@ const Workout=require('../model/workout')
 const Music=require('../model/music')
 const Trainer=require('../model/trainer');
 const Admin = require('../model/admin');
-
+const mailpassword = process.env.MAIL_PASSWORD
 
 require('dotenv').config()
 const jwt_adminaccesskey=process.env.JWT_ADMINACCESSKEY;
@@ -378,7 +378,7 @@ module.exports={
         service: 'gmail',
         auth: {
           user: 'krishnapriyaua@gmail.com', 
-          pass: 'txej uvva mwtl nzsq'      
+          pass: mailpassword   
         }
       });
       const token=jwt.sign({email:trainer.email},process.env.TRAINER_PASSWORD,{expiresIn:'1hr'})
@@ -559,7 +559,7 @@ module.exports={
             service: 'gmail',
             auth: {
               user: 'krishnapriyaua@gmail.com', // Replace with your email
-              pass: 'txej uvva mwtl nzsq'       // Replace with your email password or app password
+              pass: mailpassword      // Replace with your email password or app password
             }
           });
           const token=jwt.sign({email:applicant.email},process.env.TRAINER_PASSWORD,{expiresIn:'1hr'})
